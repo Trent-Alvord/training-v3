@@ -421,9 +421,9 @@ What Cypher code below will create a unique index on the _name_ property of the 
 Select the correct answer.
 
 [%interactive.answers]
-- [ ] [src-cypher]`CREATE INDEX PersonNameIndex FOR (p:Person) ON (p.name)`
+- [x] [src-cypher]`CREATE INDEX PersonNameIndex FOR (p:Person) ON (p.name)`
 - [ ] [src-cypher]`CREATE INDEX PersonNameIndex FOR (p:Person) ON (p.name) ASSERT p.name IS UNIQUE`
-- [x] [src-cypher]`CREATE CONSTRAINT PersonNameConstraint ON (p:Person) ASSERT p.name IS UNIQUE`
+- [ ] [src-cypher]`CREATE CONSTRAINT PersonNameConstraint ON (p:Person) ASSERT p.name IS UNIQUE`
 - [ ] [src-cypher]`CALL db.index.full-text.createNodeIndex('PersonName',['Person'], ['name'])`
 
 === Question 2
